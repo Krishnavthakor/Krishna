@@ -8,8 +8,9 @@ import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Grid } from '@mui/material';
+import KrishnaFeather from '../assets/icons/peacockFeather.png'
 
-const pages = ['Home', 'About', 'Work Experience', 'Skills', 'Portfolio'];
+const pages: string[] = ['Home', 'Skills', 'Work Experience', 'Education', 'Discover Me'];
 
 const ResponsiveAppBar: React.FC = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -22,16 +23,21 @@ const ResponsiveAppBar: React.FC = () => {
     setAnchorElNav(null);
   };
 
+  function scrollToSection(className:string) {
+    const section = document.querySelector(`.${className}`);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   return (
     <>
       <AppBar position="fixed" sx={{ backgroundColor: "black" }}>
         <Toolbar>
           <Grid container alignItems="center">
-            <Grid item xs={6} md={3}>
-              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                My Portfolio
-              </Typography>
-            </Grid>
+          <Grid item xs={6} md={3} sx={{ position: 'relative' }}>
+            <img src={KrishnaFeather} alt="Krishna" style={{height:"60px"}}/>
+          </Grid>
             <Grid item xs={6} md={9} sx={{ display: { xs: 'flex', md: 'none' }, justifyContent: 'flex-end' }}>
               <IconButton
                 size="large"
@@ -69,11 +75,11 @@ const ResponsiveAppBar: React.FC = () => {
               </Menu>
             </Grid>
             <Grid item xs={12} md={9} sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end' }}>
-              {pages.map((page) => (
+              {pages.map((page:string) => (
                 <Button
                   key={page}
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: 'white', display: 'block' }}
+                  onClick={() => scrollToSection(page.toLowerCase().replace(/\s+/g, '-'))}
+                  sx={{ my: 3, color: 'white', display: 'block' }}
                 >
                   {page}
                 </Button>

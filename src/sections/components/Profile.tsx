@@ -10,9 +10,9 @@ const ProfileComponent = () => {
       <Grid item lg={8} xs={12}>
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            <Typography variant="h1" className="heading text-uppercase h-box mb-30">
-            Software Engineer
-            </Typography>
+          <Typography variant="h1" sx={{ width: '100%', wordWrap: 'break-word' }}>
+          Software Engineer
+        </Typography>
             <Typography 
               variant="body1" 
               sx={{ visibility: 'visible', animationDuration: '1s', animationDelay: '0.5s', animationName: 'fadeInUp' }}

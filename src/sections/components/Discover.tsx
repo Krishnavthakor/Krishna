@@ -8,12 +8,12 @@ import SharedBox from '../shared/Box';
 
 const DiscoverSection = () => {
   return (
-    <Box sx={{ mt: 12, px: 2 }}>
+    <Box sx={{ mt: 12,textAlign: 'center' }}>
         <Typography variant="h3" align="center" gutterBottom>
             Discover Me
         </Typography>    
-        <Grid container spacing={4} mt={2} justifyContent="center">
-          <Grid item xs={6} sm={4} md={3} lg={3}>
+        <Grid container gap={6} mt={10} justifyContent="center" >
+          <Grid item>
             <SharedBox
               element={
                 <>
@@ -38,7 +38,7 @@ const DiscoverSection = () => {
               }
             />
           </Grid>
-          <Grid item xs={6} sm={4} md={3} lg={3}>
+          <Grid item>
             <SharedBox
               element={
                 <>
@@ -48,10 +48,10 @@ const DiscoverSection = () => {
                         textAlign: "center",
                         padding: 2,
                         borderRadius: 2,
-                        backgroundColor: '#333',
+                        backgroundColor: '#999',
                         color: 'white',
                         '&:hover': {
-                          backgroundColor: '#222',
+                          backgroundColor: '#777',
                         }
                       }}
                     >
@@ -63,7 +63,7 @@ const DiscoverSection = () => {
               }
             />
           </Grid>
-          <Grid item xs={6} sm={4} md={3} lg={3}>
+          <Grid item>
             <SharedBox
               element={
                 <>
@@ -88,7 +88,7 @@ const DiscoverSection = () => {
               }
             />
           </Grid>
-          <Grid item xs={6} sm={4} md={3} lg={3}>
+          <Grid item>
             <SharedBox
               element={
                 <>

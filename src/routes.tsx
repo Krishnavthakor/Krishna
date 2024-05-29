@@ -4,10 +4,10 @@ import HomePage from "./sections/pages/homePage";
 
 
 const AllRoutes=()=> {
-
     return(
         <Routes>
             <Route path="/" element={<HomePage/>}/>
+            <Route path="/*" element={<HomePage/>}/>
         </Routes>
     )
 } 

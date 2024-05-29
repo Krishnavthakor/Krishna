@@ -1,5 +1,4 @@
 import React from "react"
-import { Grid } from "@mui/material"
 
 interface ISharedBox {
     element:any
@@ -7,7 +6,6 @@ interface ISharedBox {
 const SharedBox: React.FC<ISharedBox> = ({ element }) => {
 
     return(
-        <Grid item xs={4}>
                     <div
                         style={{
                         position: 'relative',
@@ -57,7 +55,6 @@ const SharedBox: React.FC<ISharedBox> = ({ element }) => {
                         }}
                         ></div>
                     </div>
-                </Grid>
     )
 }
 export default SharedBox;

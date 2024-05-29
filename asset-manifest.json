@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Krishna/static/js/main.d41ebbb3.js",
+    "main.js": "/Krishna/static/js/main.1d74b6ab.js",
     "static/js/453.09f51c67.chunk.js": "/Krishna/static/js/453.09f51c67.chunk.js",
     "static/media/KrishnaThakor.jpeg": "/Krishna/static/media/KrishnaThakor.84d573bdbec98460f463.jpeg",
     "static/media/KrishnaThakor_Resume.pdf": "/Krishna/static/media/KrishnaThakor_Resume.21cfc2e32e84e8498b98.pdf",
@@ -14,10 +14,10 @@
     "static/media/icons8-html.gif": "/Krishna/static/media/icons8-html.63b4872db75859b09034.gif",
     "static/media/github.svg": "/Krishna/static/media/github.d1bb13ce1a593d82e4c0d821dc7f1b41.svg",
     "index.html": "/Krishna/index.html",
-    "main.d41ebbb3.js.map": "/Krishna/static/js/main.d41ebbb3.js.map",
+    "main.1d74b6ab.js.map": "/Krishna/static/js/main.1d74b6ab.js.map",
     "453.09f51c67.chunk.js.map": "/Krishna/static/js/453.09f51c67.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.d41ebbb3.js"
+    "static/js/main.1d74b6ab.js"
   ]
 }

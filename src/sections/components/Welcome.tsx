@@ -1,78 +1,77 @@
 import React from 'react';
-import { Grid, Typography, Box } from '@mui/material';
+import { Typography, Grid, Box } from '@mui/material';
+import { styled } from '@mui/system';
 
-const Welcome = () => {
+const WelcomeContainer = styled(Grid)({
+  minHeight: '100vh',
+  background: '#f1f1f1',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  textAlign: 'center',
+});
+
+const WelcomeContent = styled(Box)({
+  padding: '2rem',
+  backgroundColor: 'rgba(255, 255, 255, 0.9)',
+  borderRadius: '8px',
+  boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+});
+
+const BackgroundObjects = styled(Box)({
+  position: 'fixed',
+  top: 0,
+  left: 0,
+  right: 0,
+  bottom: 0,
+  zIndex: -1,
+  display: 'grid',
+  gridTemplateColumns: 'repeat(3, 1fr)',
+  gap: '1rem',
+  '& > div': {
+    background: 'linear-gradient(to bottom, #74ebd5, #ACB6E5)',
+    borderRadius: '50%',
+    width: '100px',
+    height: '100px',
+    animation: 'floating 3s infinite',
+  },
+  '& > div:nth-child(1)': {
+    animationDelay: '0s',
+  },
+  '& > div:nth-child(2)': {
+    animationDelay: '0.5s',
+  },
+  '& > div:nth-child(3)': {
+    animationDelay: '1s',
+  },
+  '@keyframes floating': {
+    '0%': { transform: 'translateY(0px)' },
+    '50%': { transform: 'translateY(-20px)' },
+    '100%': { transform: 'translateY(0px)' },
+  },
+});
+
+const WelcomePage = () => {
   return (
-    <Grid container justifyContent="center" alignItems="center" >
-      <Grid item lg={3} xs={12} style={{ display: 'flex', justifyContent: 'center' }}>
-        <Typography 
-          variant="h1" 
-          sx={{ 
-            visibility: 'visible', 
-            animationDuration: '2s', 
-            animationDelay: '0.5s', 
-            animationName: 'fadeIn',
-            fontSize: { xs: '2rem', lg: '3rem' },
-            textAlign: 'center'
-          }}
-        >
-          Hello
-        </Typography>
+    <WelcomeContainer container>
+      <BackgroundObjects>
+        <div></div>
+        <div></div>
+        <div></div>
+      </BackgroundObjects>
+      <Grid item>
+        <WelcomeContent>
+          <Typography variant="h2" gutterBottom>
+            Hello, I'm Krishna
+          </Typography>
+          <Typography variant="body1">
+            I am a skilled Software Engineer with a passion for creating
+            innovative solutions.
+          </Typography>
+        </WelcomeContent>
       </Grid>
-
-      <Grid item lg={8} xs={12} sx={{ pl: { xs: 0, lg: 10 }, mt: { xs: 3, lg: 0 } }}>
-        <Box className="banner-content" sx={{ textAlign: { xs: 'center', lg: 'left' } }}>
-          <Typography 
-            variant="h3" 
-            className="text-white intro" 
-            sx={{ 
-              fontSize: { xs: '1.5rem', lg: '2rem' }, 
-              color: 'white', 
-              animation: 'fadeIn 2s 0.5s forwards'
-            }}
-          >
-            I'm
-          </Typography>
-          <Typography 
-            variant="h2" 
-            className="text-white intro" 
-            sx={{ 
-              fontSize: { xs: '2rem', lg: '3rem' }, 
-              color: 'white', 
-              animation: 'fadeIn 2s 0.5s forwards'
-            }}
-          >
-            Krishna Thakor
-          </Typography>
-          <Typography 
-            variant="body1" 
-            className="designation" 
-            sx={{ 
-              fontSize: { xs: '1rem', lg: '1.5rem' }, 
-              color: 'white', 
-              mt: 1, 
-              animation: 'fadeIn 2s 0.5s forwards'
-            }}
-          >
-            Software Engineer
-          </Typography>
-          <Typography 
-            variant="body1" 
-            className="text-white" 
-            sx={{ 
-              fontSize: { xs: '1rem', lg: '1.25rem' }, 
-              color: 'white', 
-              mt: 2, 
-              animation: 'fadeIn 2s 0.5s forwards'
-            }}
-          >
-            Software engineer with over 3 years of work experience in the industry. <br />
-            Quick learner, motivator. Love networking and travelling. A good team leader with effective communication skills.
-          </Typography>
-        </Box>
-      </Grid>
-    </Grid>
+    </WelcomeContainer>
   );
 };
 
-export default Welcome;
+export default WelcomePage;

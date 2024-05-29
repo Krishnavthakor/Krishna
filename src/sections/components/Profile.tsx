@@ -1,11 +1,12 @@
 import React from 'react';
-import {  Button, Grid, Typography } from '@mui/material';
+import {  Button, Grid, Paper, Typography } from '@mui/material';
 import Profile from '../assets/KrishnaThakor.jpeg';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import Resume from "../assets/KrishnaThakor_Resume.pdf"
 const ProfileComponent = () => {
   return (
-    <Grid container gap={2} mt={10} >
+    <Paper elevation={2} sx={{p:2,mt:20,borderRadius:2}}>
+    <Grid container flexDirection={"row"} gap={2} justifyContent={"center"} alignItems={"center"}>
       <Grid item lg={8} xs={12}>
         <Grid container spacing={2}>
           <Grid item xs={12}>
@@ -54,13 +55,14 @@ const ProfileComponent = () => {
           alt="Krishna Thakor" 
           style={{ 
             width: '100%', 
-            height: '80%', 
+            height: '90%', 
             objectFit: 'cover', 
             borderRadius: '8px' 
           }} 
         />
       </Grid>
     </Grid>
+    </Paper>
   );
 };
 

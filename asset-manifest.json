@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.js": "/Krishna/static/js/main.10f8f114.js",
+    "main.js": "/Krishna/static/js/main.254ed0b0.js",
     "static/js/453.09f51c67.chunk.js": "/Krishna/static/js/453.09f51c67.chunk.js",
     "static/media/KrishnaThakor.jpeg": "/Krishna/static/media/KrishnaThakor.84d573bdbec98460f463.jpeg",
-    "static/media/KrishnaThakor_Resume.pdf": "/Krishna/static/media/KrishnaThakor_Resume.7fa8a29238362a151d2f.pdf",
+    "static/media/KrishnaThakor_Resume.pdf": "/Krishna/static/media/KrishnaThakor_Resume.e2f70c4bb38116f9f76b.pdf",
     "static/media/peacockFeather.png": "/Krishna/static/media/peacockFeather.6999c87a379149cd69e5.png",
     "static/media/icons8-react.gif": "/Krishna/static/media/icons8-react.4b4a9e4ca6986a3409c7.gif",
     "static/media/gmail.png": "/Krishna/static/media/gmail.3fc4aecba2cc1e5effc4.png",
@@ -14,10 +14,10 @@
     "static/media/icons8-html.gif": "/Krishna/static/media/icons8-html.63b4872db75859b09034.gif",
     "static/media/github.svg": "/Krishna/static/media/github.d1bb13ce1a593d82e4c0d821dc7f1b41.svg",
     "index.html": "/Krishna/index.html",
-    "main.10f8f114.js.map": "/Krishna/static/js/main.10f8f114.js.map",
+    "main.254ed0b0.js.map": "/Krishna/static/js/main.254ed0b0.js.map",
     "453.09f51c67.chunk.js.map": "/Krishna/static/js/453.09f51c67.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.10f8f114.js"
+    "static/js/main.254ed0b0.js"
   ]
 }

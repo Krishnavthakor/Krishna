@@ -1,0 +1,6 @@
+.round-icon {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}

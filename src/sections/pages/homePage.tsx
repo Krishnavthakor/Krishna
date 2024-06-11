@@ -21,7 +21,7 @@ function HomePage() {
                 <Grid item xs={12}  id="skills" className="skills">
                     <Skills/>
                 </Grid>
-                <Grid item xs={12}  id="work-experience" className="experience">
+                <Grid item xs={12}  id="work-experience" className="work-experience">
                     <ExperienceComponent/>
                 </Grid>
                 <Grid item xs={12}  id="education" className="education">

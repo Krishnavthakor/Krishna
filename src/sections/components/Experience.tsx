@@ -58,7 +58,7 @@ const ExperienceComponent = () => {
         {
             title: "Software Developer",
             company: "Viral Nation",
-            years: "April 2023 - May 2024",
+            years: "April 2023 - Present",
             text: "Experienced in front-end development using React.JS, HTML, CSS, and MUI, and back-end development with Node.JS, Prisma, GraphQL, PostgreSQL, and MS SQL Server. Designed new product features, customized reports, and fixed bugs for responsive web applications. Developed NPM packages for custom themes and shared modules. Conducted unit, integration, and end-to-end testing using Cypress, Storybook, and Playwright. Integrated GraphQL and REST APIs, and utilized Docker and Kubernetes for deployment. Managed database migrations with the Prisma Migration Tool.",
             icon: <WorkIcon fontSize="large" color="primary" />,
         },
@@ -78,7 +78,7 @@ const ExperienceComponent = () => {
         },
         {
             title: "Software Developer",
-            company: ITLuxTech",
+            company: "ITLuxTech",
             years: "May 2019 - April 2021",
             text: "Collaborated with a team of engineers in an agile environment. Developed web applications using HTML, CSS, Bootstrap, jQuery, React.JS, Node.JS, PHP, ASP .NET, MSSQL Server, and MySQL for an established Event Management Company in Surat. Provided support and training to clients' employees on application usage. Proficient in writing SQL queries, views, and stored procedures for MS SQL Server and MySQL databases.",
             icon: <WorkIcon fontSize="large" color="primary" />,
